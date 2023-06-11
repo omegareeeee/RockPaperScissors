@@ -10,7 +10,8 @@ function getComputerChoice (){
         return "scissor";
     }
 }
- function playRound(playerChoice, computerChoice){
+ function playRound(playerChoice){
+    computerChoice = computerChoice();
     if (playerChoice == "rock"){
         if (computerChoice == "paper"){
             return "You Lose! Paper beats Rock";
@@ -63,5 +64,3 @@ function getComputerChoice (){
 
     }
  }
-
- console.log(playRound(getplayerChoice(), getComputerChoice()));
