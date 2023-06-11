@@ -48,9 +48,19 @@ function getComputerChoice (){
 
  function getplayerChoice(){
     while(true){
-        playerChoice = prompt("Rock, Paper, or Scissor?")
-        if(playerChoice == "rock" | "paper"| "sciccor"){
-            return playerChoice;
-        } 
+        playerChoice = prompt("Rock, Paper, or Scissor?");
+        playerChoice.toLowerCase();
+        switch (playerChoice){
+            case "rock":
+            case "paper":
+            case "scissor":
+                return playerChoice;
+            default:
+                console.log("Invalid answer");
+                break;
+        }
+
     }
  }
+
+ console.log(playRound(getplayerChoice(), getComputerChoice()));
