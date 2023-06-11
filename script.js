@@ -49,7 +49,8 @@ function getComputerChoice (){
  function getplayerChoice(){
     while(true){
         playerChoice = prompt("Rock, Paper, or Scissor?");
-        playerChoice.toLowerCase();
+        playerChoice = playerChoice.toLowerCase();
+
         switch (playerChoice){
             case "rock":
             case "paper":
