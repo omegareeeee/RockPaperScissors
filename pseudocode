@@ -1,0 +1,38 @@
+getComputerChoice function
+    num = Random number
+    if num = 1
+        return Rock
+    if num = 2
+        return Paper
+    else
+        return Scissors
+playerSelection
+    if user input = "Rock" "Paper" "Scissors"
+        return user input
+    else
+        ask again
+
+play function (computerSlection, playerSelection)
+    if playerSelection = "rock"
+        if computerSlection = "paper"
+            return "you lose"
+        if computerSlection = "scissors"
+            return "you won"
+        else
+            return "you tied"
+            
+    if playerSelection = "paper"
+        if computerSlection = "scissors"
+            return "you lose"
+        if computerSlection = "rock"
+            return "you won"
+        else
+            return "you tied"
+
+    if playerSelection = "scissor"
+        if computerSlection = "rock"
+            return "you lose"
+        if computerSlection = "paper"
+            return "you won"
+        else
+            return "you tied"
