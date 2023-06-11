@@ -45,3 +45,12 @@ function getComputerChoice (){
         }
     }
  }
+
+ function getplayerChoice(){
+    while(true){
+        playerChoice = prompt("Rock, Paper, or Scissor?")
+        if(playerChoice == "rock" | "paper"| "sciccor"){
+            return playerChoice;
+        } 
+    }
+ }
