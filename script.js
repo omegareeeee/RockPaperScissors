@@ -11,33 +11,33 @@ function getComputerChoice (){
     }
 }
  function playRound(playerChoice, computerChoice){
-    if (playerChoice = "rock"){
-        if (computerChoice = "paper"){
+    if (playerChoice == "rock"){
+        if (computerChoice == "paper"){
             return "you lose"
         }
-        if (computerChoice = "scissors"){
+        if (computerChoice == "scissors"){
             return "you won"
         }
         else{
             return "you tied"
         }
     }  
-    if (playerChoice = "paper"){
-        if (computerChoice = "scissors"){
+    if (playerChoice == "paper"){
+        if (computerChoice == "scissors"){
             return "you lose"
         }
-        if (computerChoice = "rock"){
+        if (computerChoice == "rock"){
             return "you won"
         }
         else{
             return "you tied"
         }
     }
-    if (playerChoice = "scissor"){
-        if (computerChoice = "rock"){
+    if (playerChoice == "scissor"){
+        if (computerChoice == "rock"){
             return "you lose"
         }
-        if (computerChoice = "paper"){
+        if (computerChoice == "paper"){
             return "you won"
         }
         else{
