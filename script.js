@@ -66,9 +66,7 @@ function getComputerChoice (){
  }
 
  function game(){
-    for(i = 0; i < 5; i++){
-        console.log(playRound(getplayerChoice()));
-    }
+    
  }
 
  game();
