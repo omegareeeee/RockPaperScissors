@@ -6,6 +6,7 @@ getComputerChoice function
         return Paper
     else
         return Scissors
+
 playerSelection
     if user input = "Rock" "Paper" "Scissors"
         return user input
@@ -36,3 +37,5 @@ play function (computerSlection, playerSelection)
             return "you won"
         else
             return "you tied"
+
+

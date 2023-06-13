@@ -12,40 +12,41 @@ function getComputerChoice (){
 }
  function playRound(playerChoice){
     computerChoice = getComputerChoice();
+
     if (playerChoice == "rock"){
         if (computerChoice == "paper"){
-            return "You Lose! Paper beats Rock";
+            console.log( "You Lose! Paper beats Rock");
         }
         if (computerChoice == "scissor"){
-            return "You Won! Rock beats Scissors"
+            console.log( "You Won! Rock beats Scissors");
         }
         else{
-            return "You Tied!"
+            console.log( "You Tied!");
         }
     }  
     if (playerChoice == "paper"){
         if (computerChoice == "scissor"){
-            return "You Lose! Scissor beats Paper"
+            console.log( "You Lose! Scissor beats Paper");
         }
         if (computerChoice == "rock"){
-            return "You Won! Paper beats Rock"
+            console.log( "You Won! Paper beats Rock");
         }
         else{
-            return "You Tied!"
+            console.log( "You Tied!");
         }
     }
     if (playerChoice == "scissor"){
         if (computerChoice == "rock"){
-            return "You Lose! Rock beats Scissor"
+            console.log( "You Lose! Rock beats Scissor");
         }
         if (computerChoice == "paper"){
-            return "You Won! Scissor beats Paper"
+            console.log( "You Won! Scissor beats Paper");
         }
         else{
-            return "You Tied"
+            console.log( "You Tied");
         }
     }
- }
+}
 
  function getplayerChoice(){
     while(true){
@@ -65,8 +66,16 @@ function getComputerChoice (){
     }
  }
 
- function game(){
-    
- }
+ const rock = document.querySelector('#rock');
+ const paper = document.querySelector('#paper');
+ const scissor = document.querySelector('#scissor');
 
- game();
+ rock.addEventListener('click', () => {
+    playRound('rock');
+ });
+ paper.addEventListener('click', () => {
+    playRound('paper');
+ });
+ scissor.addEventListener('click', () => {
+    playRound('scissor');
+ });
