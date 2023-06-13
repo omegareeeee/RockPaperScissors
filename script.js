@@ -91,7 +91,7 @@ function getComputerChoice (){
  const scoreBoard = document.querySelector('#scoreBoard');
  let playerScore = 0;
  let aiScore = 0;
-
+// add forEACH witu button.textContent
  rock.addEventListener('click', () => {
     result = playRound('rock');
     if(result){
@@ -100,7 +100,10 @@ function getComputerChoice (){
         aiScore++;
     }
     scoreBoard.textContent = "ScoreBoard:" +playerScore + ":" + aiScore;
-    hasWinner(playerScore, aiScore);
+    if(hasWinner(playerScore, aiScore)){
+        playerScore = 0;
+        aiScore = 0;
+    }
  });
 
  paper.addEventListener('click', () => {
@@ -111,7 +114,10 @@ function getComputerChoice (){
         aiScore++;
     }
     scoreBoard.textContent = "ScoreBoard:" +playerScore + ":" + aiScore;
-    hasWinner(playerScore, aiScore);
+    if(hasWinner(playerScore, aiScore)){
+        playerScore = 0;
+        aiScore = 0;
+    }
  });
  scissor.addEventListener('click', () => {
     result = playRound('scissor');
@@ -121,7 +127,10 @@ function getComputerChoice (){
         aiScore++;
     }
     scoreBoard.textContent = "ScoreBoard:" +playerScore + ":" + aiScore;
-    hasWinner(playerScore, aiScore);
+    if(hasWinner(playerScore, aiScore)){
+        playerScore = 0;
+        aiScore = 0;
+    }
  });
  
  
